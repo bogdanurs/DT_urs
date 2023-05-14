@@ -1,0 +1,26 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          $("p").show();
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="message"></div>
+      <p id="paragraph1">Not modified text</p>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+    </div>
+  </body>
+</html>

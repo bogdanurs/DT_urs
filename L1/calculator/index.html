@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator-body">
+      <input type="text" id="firstNumber" placeholder="First Number" />
+      <input type="text" id="secondNumber" placeholder="Second Number" />
+      <div class="selection-wrapper">
+        <label
+          ><input type="radio" name="operator" value="+" />
+          <p>+</p></label
+        >
+        <label
+          ><input type="radio" name="operator" value="-" />
+          <p>-</p></label
+        >
+        <label
+          ><input type="radio" name="operator" value="*" />
+          <p>*</p></label
+        >
+        <label
+          ><input type="radio" name="operator" value="/" />
+          <p>/</p></label
+        >
+        <label
+          ><input type="radio" name="operator" value="%" />
+          <p>%</p></label
+        >
+      </div>
+      <button id="calculate">=</button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
